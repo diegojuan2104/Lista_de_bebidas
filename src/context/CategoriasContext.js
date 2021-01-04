@@ -7,7 +7,6 @@ import axios from 'axios';
 
 export const CategoriasContext = createContext();
 
-
 //Provider es donde se encuentran las funciones y es state
 
 const CategoriasProvider = (props) => {

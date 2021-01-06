@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React, { Fragment } from "react";
+import React, { useContext, useState } from 'react';
 
 import Header from "./components/Header.component";
 import Formulario from "./components/Formulario.component";
@@ -10,14 +10,13 @@ import CategoriasProvider from "./context/CategoriasContext";
 import RecetasProvider from "./context/RecetasContext";
 import ModalProvider from './context/ModalContext';
 
-
-
 function App() {
+
   return (
     <CategoriasProvider>
       <RecetasProvider>
         <ModalProvider>
-          
+
         <Header />
         <div className="container mt-5">
           <div className="row">
